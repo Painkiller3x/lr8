@@ -2,10 +2,9 @@ body{
 margin: 0;
 }
 html{
-background: url(../img/witcher3.png) no-repeat center center fixed; 
+background-image:url(../img/Witcher3.png);
 -webkit-background-size: cover;
 -moz-background-size: cover;
--o-background-size: cover;
 background-size: cover;
 }
 #div1{
