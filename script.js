@@ -50,7 +50,6 @@ btn.addEventListener('click', () => {
 	score.textContent = name +":"+player+" Comp:"+comp;
 	if((player==3)&&(comp!=3)){alert("Виграв:"+name)}
 	if(comp==3){alert("Виграв бот")}
-	if((player==3)&&(comp==3)){alert("Баланс")}
 }});
 div2.appendChild(btn);
 const btn2 = document.createElement('button');
