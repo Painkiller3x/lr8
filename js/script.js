@@ -1,6 +1,5 @@
 var name = prompt("Введіть ваше ім'я");
 if(name==""){name="NoName";}
-console.log(name);
 const Geralt = document.querySelector('#w1');
 Geralt.addEventListener('click',() => { duel(1,name)},{once:true});
 const Ciri = document.querySelector('#w2');
@@ -24,6 +23,7 @@ function duel(w,name){
 	Start()
 }
 function Start(){
+h1.textContent="";
 const imge = document.createElement('img');
 imge.src ="img/Eredin2.jpg";
 imge.title = "Eredin"
@@ -48,12 +48,11 @@ btn.addEventListener('click', () => {
 		comp++;
 	}
 	score.textContent = name +":"+player+" Comp:"+comp;
-	if(player==3){alert("Виграв:"+name)}
-		if(comp==3) {alert("Виграв бот")}
+	if((player==3)&&(comp!=3)){alert("Виграв:"+name)}
+	if(comp==3){alert("Виграв бот")}
+	if((player==3)&&(comp==3)){alert("Баланс")}
 }});
 div2.appendChild(btn);
-const br2 = document.createElement('br');
-div2.appendChild(br2);
 const btn2 = document.createElement('button');
 btn2.innerHTML="Restart";
 btn2.id = "btn2";
